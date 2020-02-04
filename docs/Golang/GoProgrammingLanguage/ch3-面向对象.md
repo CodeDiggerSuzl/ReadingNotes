@@ -249,8 +249,14 @@ val ex2 interface2 = new(example)
     var a Integer = 1
     var b Interface1 = &a
     ```
-    当接口中为指针类型的时候, 使用 `&a` 进行赋值. 当不是指针的时候,`a` 或者 `&a` 都可以. 尽量使用 `&a` 进行复制.
-    原因见: Page75
+    当接口中为指针类型的时候, 使用 `&a` 进行赋值. 当不是指针的时候,`a` 或者 `&a` 都可以. 尽量使用 `&a` 进行复制.原因见: Page75
+
+    **🦍 [为什么可以将接口的实例赋值给接口 ?](https://stackoverflow.com/questions/13511203/why-cant-i-assign-a-struct-to-an-interface)**
+    > 当您有一个实现接口的结构时，指向该结构的指针也会自动实现该接口。 这就是为什么在函数原型中永远没有* SomeInterface的原因，因为这不会向SomeInterface添加任何内容，并且在变量声明中不需要这种类型（请参阅此相关问题）。
+
+    > 接口值不是具体结构的值（因为它的大小可变，所以不可能），但是它是一种指针（更精确地说，是指向结构的指针和指向类型的指针 ）。 拉斯·考克斯（Russ Cox）正是在这里描述它：`https://research.swtch.com/interfaces`
+
+
 2. 将一个接口赋值给另一个接口
 
    只要两个接口拥有相同的方法, 无论顺序是否相同, 都可以互相赋值.
