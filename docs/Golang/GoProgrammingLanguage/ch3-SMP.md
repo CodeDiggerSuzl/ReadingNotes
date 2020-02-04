@@ -1,7 +1,8 @@
 # 命令行程序 Simple Media Player (SMP)
+Source code :
+> https://github.com/CodeDiggerSuzl/Go-Practice-Demos/tree/master/GoPLDemo/Mp3Player
 
 ## 实现的功能
-
 1. 音乐库功能, 查看, 添加, 删除里面的音乐曲目;
 2. 播放音乐;
 3. 支持 MP3 和 WAV, 也可以随时支持更多的音乐类型;
@@ -38,7 +39,7 @@ type MusicEntry struct{
 ```
 使用一个数组切片作为基础的储存结构, 其他操作都只是对这个数组切片的包装.
 
-[manager.go](mlib/manager.go)
+`manager.go`
 
 编写 `manager` 后要立马进行单元测试.
 
@@ -57,7 +58,7 @@ type Player interface{
 ### 主程序
 和面向对象关系不大, 简写代码.
 
-[main.go](./src/main.go)
+`main.go`
 
 ### 遗留问题
 1. 多任务的加入: 用户界面, 音乐播放,视频播放等功能. 可以使用`goroutine` 来进行完善.
