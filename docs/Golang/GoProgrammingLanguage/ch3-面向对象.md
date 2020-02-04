@@ -308,4 +308,4 @@ func Println(args ...interface{})
 
 ## 3.6 [Simple Music Player](ch3-SMP.md)
 
-实现基本的命令行程序,实现数据 🎵g音乐的管理功能.
+实现基本的命令行程序,实现数据 🎵音乐的管理功能.
