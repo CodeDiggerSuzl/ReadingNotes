@@ -314,6 +314,6 @@ func Println(args ...interface{})
 
 ## 3.6 Simple Music Player
 
-[SMP 文档]([ch3-SMP.md](https://github.com/CodeDiggerSuzl/Go-Practice-Demos/tree/master/GoPLDemo/Mp3Player))
+[SMP 文档](https://github.com/CodeDiggerSuzl/Go-Practice-Demos/tree/master/GoPLDemo/Mp3Player)
 
 实现基本的命令行程序,实现数据 🎵音乐的管理功能.
