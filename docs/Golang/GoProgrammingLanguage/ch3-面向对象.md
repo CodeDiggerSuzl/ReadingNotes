@@ -312,6 +312,8 @@ type ReadWriter interface{
 func Println(args ...interface{})
 ```
 
-## 3.6 [Simple Music Player](ch3-SMP.md)
+## 3.6 Simple Music Player
+
+[SMP 文档](./ch3-SMP.md)
 
 实现基本的命令行程序,实现数据 🎵音乐的管理功能.
